@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    background-color: #f9f9fd;
+
+}
+h1{
+    font-size: 24px;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px -1px black;
+    /* animation-delay: 5s;
+    animation-name: changeBgColor;
+    animation-duration: 6s;
+    animation-iteration-count: infinite; */
+    animation: infinite changeBgColor 5s 3s;
+}
+
+/* .box:hover{
+    animation-delay: 5s;
+    animation-name: changeBgColor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+} */
+@keyframes changeBgColor{
+    0%{
+        background-color: teal;
+        transform:rotate(0deg);
+        opacity: 0;
+        transform: scale(1);
+       
+    }
+    50%{
+        background-color: orange;
+        transform: rotate(360deg);
+        opacity: 1;
+        transform: scale(1.2);
+      
+    }
+    100%{
+        background-color: deeppink;
+        transform: rotate(0deg);
+        opacity: 0;
+        transform: scale(1);
+        /* transform: rotate(0deg); */
+    }
+}
